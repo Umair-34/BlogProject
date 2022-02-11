@@ -31,4 +31,5 @@ app.get("/blogs", async (req, res) => {
 
 app.use("/articles", articleRouter);
 
-app.listen(4000);
+app.listen(process.env.PORT || 4000)
+
